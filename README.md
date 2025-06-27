@@ -68,6 +68,5 @@ All teams collaborated through feature branches, pull requests, and code reviews
 ## 🔌 Backend / API Explanation
 The project uses SQLite for local data storage to persist game scores.
 
-
 ## 📜 License
 This project is part of the coursework for Open Source Software Development (OSSD) and is intended for educational use only.
