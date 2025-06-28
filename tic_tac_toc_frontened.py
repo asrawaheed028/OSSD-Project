@@ -2,7 +2,7 @@
 
 import tkinter as tk
 from tkinter import messagebox
-from backened import TicTacToeGame
+from tic_tac_toc_backend import TicTacToeGame
 
 # GUI Application class
 class TicTacToeApp:
