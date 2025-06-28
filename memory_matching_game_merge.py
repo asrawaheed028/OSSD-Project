@@ -5,7 +5,7 @@ from tkinter import messagebox
 import random
 
 class MemoryGameBackend:
-    def _init_(self):  # fixed constructor name
+    def __init__(self):  # fixed constructor name
         self.symbols = []
         self.moves = 0
         self.first_click = None
