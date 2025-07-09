@@ -67,7 +67,10 @@ All teams collaborated through feature branches, pull requests, and code reviews
 
 ## 🔗 Major Pull Requests and Issues
 ✅ Update these with actual GitHub URLs after your team merges PRs or reports issues.
-
+**Issue 1:** https://github.com/MuhammadZohaib05/OSSD-Project/issues/11
+**Issue 2:** https://github.com/MuhammadZohaib05/OSSD-Project/issues/10
+**Issue 3:** https://github.com/MuhammadZohaib05/OSSD-Project/issues/9
+**Issue 4:** https://github.com/MuhammadZohaib05/OSSD-Project/issues/8
 
 ## 🔌 Backend / API Explanation
 The project uses SQLite for local data storage to persist game scores.
