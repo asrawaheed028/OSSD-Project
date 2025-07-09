@@ -6,12 +6,11 @@
 
 **Mini Game Hub** is a desktop application built using Python’s Tkinter library, featuring two engaging mini-games. Developed collaboratively by three teams as part of the **Open Source Software Development (OSSD)** course, the project demonstrates practical skills in GUI programming, GitHub-based collaboration, and backend integration with SQLite for score storage.
 
----
-
 ## 🚀 Feature Summary
 
-- 🎯 **Game 1: Color Match** – A reaction-based game where players match the name of a color with the displayed font color under time pressure.  
-- 🧩 **Game 2: Number Puzzle** – A logic-based game that requires players to arrange scrambled numbers in ascending order.
+- ❌⭕**Game 1: Tic Tac Toe** – A turn-based strategy game where two players (X and O) take turns marking spaces in a 3×3 grid. The first player to align three marks in a row, column, or diagonal wins.
+- 🧩 **Game 2: Memory Matching Game** – A concentration game where players flip over two tiles at a time, trying to find matching pairs. The game tracks moves and displays a win message when all pairs are matched.
+- ✊✋✌️ **Game 3: Rock Paper Scissors** – A classic hand-sign battle game where the player chooses Rock, Paper, or Scissors against a randomly selected computer move. The winner is decided based on traditional         rules and displayed after each round.
 - 🕹️ **Main Hub Interface** – Central screen with options to launch each game, view credits, and exit.
 - 💾 **Score Tracking** – Persistent storage using SQLite for storing and retrieving scores.
 - 📦 **Modular Code** – Organized structure for each game and backend logic.
@@ -42,9 +41,11 @@
 
 ## 🏠 Main Game Hub Interface
 
-## 🎯 Game 1: Color Match
+## ❌⭕**Game 1: Tic Tac Toe**
 
-## 🧩 Game 2: Number Puzzle
+## 🧩 **Game 2: Memory Matching Game**
+
+## ✊✋✌️ **Game 3: Rock Paper Scissors**
 
 ## 👥 Contribution Credits
 
@@ -56,7 +57,10 @@ Muhammad Mohid
 Tashfah Ashraf
 Maheen Irfan
 
-## 🧰 Team 3 – GitHub, Database & Integration
+## ✊✋✌️ Team 3 - Game 3: Rock Paper Scissor
+Tayyaba
+
+## 🧰 Team 4 – GitHub, Database & Integration
 Muhammad Zohaib
 
 All teams collaborated through feature branches, pull requests, and code reviews on GitHub.
