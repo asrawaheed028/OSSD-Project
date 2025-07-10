@@ -1,5 +1,3 @@
-# main.py
-
 import tkinter as tk
 from tkinter import messagebox
 from tic_tac_toc_backend import TicTacToeGame
@@ -9,28 +7,34 @@ class TicTacToeApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Tic-Tac-Toe")
+        self.root.configure(bg="red")  # Changed to red background
         self.game = TicTacToeGame()
         self.buttons = [[None for _ in range(3)] for _ in range(3)]
         self.create_widgets()
 
     def create_widgets(self):
-        frame = tk.Frame(self.root)
+        frame = tk.Frame(self.root, bg="red")  # Match frame background to red
         frame.pack()
 
         for i in range(3):
             for j in range(3):
                 btn = tk.Button(frame, text="", font=('Helvetica', 20), width=5, height=2,
+                                bg="#ffffff",  # White background for buttons
+                                activebackground="#e6e6e6",  # Slight gray on click
                                 command=lambda i=i, j=j: self.button_click(i, j))
-                btn.grid(row=i, column=j)
+                btn.grid(row=i, column=j, padx=5, pady=5)
                 self.buttons[i][j] = btn
 
-        self.restart_button = tk.Button(self.root, text="Restart", font=('Helvetica', 14), command=self.restart_game)
+        self.restart_button = tk.Button(self.root, text="Restart", font=('Helvetica', 14),
+                                        bg="#d9d9d9", activebackground="#c0c0c0",
+                                        command=self.restart_game)
         self.restart_button.pack(pady=10)
 
     def button_click(self, row, col):
         valid, player, winner, draw = self.game.make_move(row, col)
         if valid:
-            self.buttons[row][col].config(text=player, fg="blue" if player == "X" else "red")
+            color = "red" if player == "X" else "blue"
+            self.buttons[row][col].config(text=player, fg=color)
             if winner:
                 messagebox.showinfo("Game Over", f"Player {winner} wins!")
                 self.disable_buttons()
@@ -47,7 +51,7 @@ class TicTacToeApp:
         self.game.reset()
         for i in range(3):
             for j in range(3):
-                self.buttons[i][j].config(text="", state="normal")
+                self.buttons[i][j].config(text="", state="normal", fg="black")
 
 # Run the GUI
 if __name__ == "__main__":
