@@ -32,14 +32,22 @@ class MemoryGameBackend:
 
 # ✅ Frontend Code (your original)
 
+import tkinter as tk
+from tkinter import messagebox
+from memory_game_backend import MemoryGameBackend
+
 # Initialize Backend
 backend = MemoryGameBackend()
 
 # Create the main window
 memory_game = tk.Tk()
 memory_game.title("Memory Matching Game")
-memory_game.geometry("500x550")
-memory_game.resizable(False, False)
+
+# Make fullscreen
+memory_game.attributes("-fullscreen", True)
+
+# Allow ESC key to exit fullscreen
+memory_game.bind("<Escape>", lambda event: memory_game.attributes("-fullscreen", False))
 
 buttons = {}
 
@@ -112,6 +120,13 @@ for i in range(4):
 # Reset Button
 reset_button = tk.Button(memory_game, text="Reset Game", font=("Arial", 14), bg="#FF7043", fg="white", command=reset_game)
 reset_button.pack(pady=20)
+
+# Exit Fullscreen Button
+def exit_fullscreen():
+    memory_game.attributes("-fullscreen", False)
+
+exit_button = tk.Button(memory_game, text="Exit Fullscreen", font=("Arial", 12), command=exit_fullscreen)
+exit_button.pack(pady=5)
 
 # Run the app
 memory_game.mainloop()
