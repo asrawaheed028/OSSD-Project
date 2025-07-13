@@ -54,6 +54,14 @@ memory_match_button = tk.Button(menu_frame, text="Start Memory Matching Game", f
                                 width=30, height=2, bg="#2196F3", fg="white", command=start_memory_match)
 memory_match_button.pack(pady=20)
 
+# Start Rock Paper Scissors Game Button
+def start_rock_paper_scissors():
+    subprocess.Popen(["python", "rock_paper_scissor_merge.py"])
+
+rock_paper_scissors_button = tk.Button(menu_frame, text="Start Rock Paper Scissors", font=("Arial", 16),
+                                       width=30, height=2, bg="#673AB7", fg="white", command=start_rock_paper_scissors)
+rock_paper_scissors_button.pack(pady=20)
+
 # Fullscreen Button
 fullscreen_button = tk.Button(menu_frame, text="Go Fullscreen", font=("Arial", 16),
                               width=30, height=2, bg="#FF9800", fg="white", command=toggle_fullscreen)
