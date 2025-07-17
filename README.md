@@ -37,7 +37,8 @@
  3️⃣ Run the Application
 
  ## 📸 Screenshots
-⚠️ Replace these placeholders with actual images once the interface is complete.
+⚠️ Replace these placeholders with actual images once the interface is complete
+<img width="1917" height="1027" alt="image" src="https://github.com/user-attachments/assets/f4fd0109-07ba-4370-af71-011065f8deee" />
 
 ## 🏠 Main Game Hub Interface
 
